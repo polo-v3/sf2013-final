@@ -1,0 +1,24 @@
+<?php 
+
+class LibroForm extends sfForm {
+  public function Configure() {
+    $opciones = array(
+      'ingles' => 'Inglés',
+      'aleman' => 'Alemán'
+    );
+    $this->setWidgets(array(
+      'ISBN' => new sfWidgetFormInputText(),
+      'Titulo' => new sfWidgetFormInputText(),
+      'Idioma' => new sfWidgetFormInputChoice($opciones),
+    ));
+    $this->setValidators(array(
+      'ISBN' => new sfValidatorString(array(
+        'min_length' => 16,
+        'max_length' => 16,
+        'message' => 'No es un ISBN válido'
+      ))
+    ));
+  }
+}
+
+?>

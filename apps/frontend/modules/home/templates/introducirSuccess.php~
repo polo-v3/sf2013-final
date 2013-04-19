@@ -1,0 +1,2 @@
+<?php echo form_tag_for($form, '@procesarLibro') ?>
+<?php echo $form['ISBN']->renderLabel();  ?>  

@@ -1,0 +1,3 @@
+$libro = new Libro();
+
+$test → is('Libro',$libro → _getClass());

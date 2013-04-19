@@ -1,0 +1,10 @@
+<?php
+
+	include(dirname(__FILE__).'/unit.php');
+
+	$conf=ProjectConfiguration::getAplicationConfiguration('frontend','test',true);
+
+	new sfDatabaseManager($conf);
+
+
+?>

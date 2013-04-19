@@ -1,0 +1,28 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<table>
+		<th>
+			<td>id</td>
+			<td>nombre</td>
+			<td>titulo</td>
+			<td>autor</td>
+			<td>contenido</td>
+			<td>idioma</td>
+			<td>nivel</td>
+
+		</th>
+
+		<?php foreach ($libros as $columna) : ?>
+		<tr>
+			<?php foreach ($columna as $value):?>
+			<td><?php $valor ?></td>
+			<?php endforeach; ?>
+		</tr>
+		<? endforeach; ?>
+	</table>	
+
+</body>
+</html>
